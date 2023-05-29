@@ -59,7 +59,7 @@ a:hover {
 
 .gridEjemplos {
     display: grid;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(2,50%);
     grid-gap: 10px;
     justify-content: space-between;
     align-content: space-around;
