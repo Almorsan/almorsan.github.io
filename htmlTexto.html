@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - texto</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        h1 {
+            font-size: 32px;
+            
+        }
+</style>
 </head>
+
 <body>
+    
     <nav>
         <ul>
             <li><a href="index.html">INICIO</a></li>
@@ -20,8 +29,9 @@
     </nav>
 
     <center><img src="./imagenes/Recurso 2.png" class="imgEncabezado"></center>
-
+    
     <article>
+        
         <section id="contenido">
 
             <div id="menuLateral">
@@ -38,20 +48,24 @@
                 </ul>
             </div>
 
-            <h2>Procesamiento de texto</h2>
-
+            <h1>Procesamiento de texto</h1>
+        </br>
+        </br>
             <p>
                 En este apartado te voy a mostrar como puedes mostrar un texto en una página web con HTML, y modificarlo
                 según el uso que le quieras dar.
             </p>
 
             <br>
-
+        </br>
+        </br>
             <p>
                 La siguiente etiqueta es la más simple para mostrar texto dentro de una página web, es recomendable
                 usar siempre al menos una etiqueta para mostrar un texto, dado que luego podremos hacer modificaciones
                 sobre todos los textos que tengan esta misma etiqueta, como cambiar el color, tamaño, fuente, etc.
             </p>
+        </br>
+        </br>
 
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
@@ -62,10 +76,19 @@
                     <p>El contenido de la etiqueta &lt;p&gt; se muestra exactamente igual que la escribes</p>
                 </div>
             </div>
+        </br>
+        </br>
 
             <p>
-                El siguiente ejemplo muestra como podemos dar formato de titulo al texto
+                Los elementos de encabezado implementan seis niveles de encabezado del documento, 
+                h1 es el más importante, y h6, el menos importante. Un elemento de encabezado describe
+                     brevemente el tema de la sección que presenta. La información de encabezado puede ser usada por
+                      los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento automáticamente.
             </p>
+        </br>
+       </br>
+
+
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -76,11 +99,163 @@
                     <h1>El texto dentro de esta etiqueta será considerado como un titulo</h1>
                 </div>
             </div>
+        </br>
+       </br>
 
             <p>
-                Tenemos varios tipos de titulos desde titulo1 que sería el más grande hasta titulo4 que sería el 
+                Tenemos varios tipos de titulos desde Título 1 que sería el más grande hasta Título 6 que sería el 
                 titulo más pequeño
             </p>
+
+        </br>
+    </br>
+
+           
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h1&gt;</code> Título 1 <code>&lt;/h1&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h1>Título 1</h1>
+                </div>
+            </div>
+        </br>
+        </br>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h2&gt;</code> Título 2 <code>&lt;/h2&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h2>Título 2</h2>
+                </div>
+            </div>
+        </br>
+        </br>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h3&gt;</code> Título 3 <code>&lt;/h3&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h3>Título 3</h3>
+                </div>
+            </div>
+        </br>
+        </br>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h4&gt;</code> Título 4<code>&lt;/h4&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h4>Título 4</h4>
+                </div>
+            </div>
+        </br>
+        </br>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h5&gt;</code> Título 5 <code>&lt;/h5&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h5>Título 5</h5>
+                </div>
+            </div>
+        </br>
+        </br>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;h6&gt;</code> Título 6 <code>&lt;/h6&gt;</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h6>Título 6</h6>
+                </div>
+            </div>
+        </br>
+        </br>
+        <p>Para poder resaltar un texto mediante el uso de negrita (bold), utilizaremos la etiqueta strong. Para el 
+            uso de cursiva(italic), por su parte, utilizaremos la etiqueta em.
+        </p>
+      </br>
+      </br>
+      <div class="gridEjemplos">
+        <div class="ejemploCodigo">
+            <code>&lt;strong&gt;</code> Ejemplo de uso de la etiqueta strong para negrita (bold) <code>&lt;/strong&gt;</code>
+        </div>
+
+        <div class="demostracionEjemplo">
+            <strong>Ejemplo de uso de la etiqueta strong para negrita (bold)</strong>
+        </div>
+    </div>
+    </br>
+    </br>
+    <div class="gridEjemplos">
+        <div class="ejemploCodigo">
+            <code>&lt;em&gt;</code> Ejemplo de uso de la etiqueta em para cursiva (italic) <code>&lt;/em&gt;</code>
+        </div>
+
+        <div class="demostracionEjemplo">
+            <em>Ejemplo de uso de la etiqueta em para cursiva (italic)</em>
+        </div>
+    </div>
+</br>
+</br>
+<p>Para el uso de notaciones matemáticas, por otra parte, utilizaremos la etiqueta sup (en el caso de que 
+    queramos expresar potencias matemáticas) y la etiqueta sub (para el caso de notaciones propias de elementos químicos)
+</p>
+</br>
+</br>
+<div class="gridEjemplos">   
+    <div class="ejemploCodigo">
+        4<code>&lt;sup&gt;</code> 
+
+        2
+        
+        <code>&lt;/sup&gt;</code>=16
+    </div>
+
+    <div class="demostracionEjemplo">
+        <p>
+        
+        4<sup>2</sup>=16
+
+
+
+        </p>
+    </div>
+</div>
+</br>
+</br>
+<div class="gridEjemplos">   
+    <div class="ejemploCodigo">
+        H<code>&lt;sub&gt;</code> 
+
+        2
+        
+        <code>&lt;/sub&gt;</code>O
+    </div>
+
+    <div class="demostracionEjemplo">
+        <p>
+        
+            H<sub>2</sub>O
+
+
+
+        </p>
+    </div>
+</div>
+            
 
         </section>
 
