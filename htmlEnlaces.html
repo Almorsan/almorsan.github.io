@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <title>HTML - enlaces</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
-    
+
     <style>
         h1 {
             font-size: 32px;
         }
-         </style>
-            
+    </style>
+
 </head>
+
 <body>
     <nav>
         <ul>
@@ -31,125 +33,121 @@
     <a name="inicio"></a>
 
     <article>
+
+        <div id="menuLateral">
+            <ul>
+                <li>HTML</li>
+                <li><a href="htmlTexto.html"> > Procesamiento de texto</a></li>
+                <li><a href="htmlEnlaces.html"> > Enlaces</a></li>
+                <li><a href="htmlTablas.html"> > Tablas</a></li>
+                <li>CSS</li>
+                <li><a href="paginaCss.html"> > Tipos de Identificadores</a></li>
+                <li>JAVASCRIPT</li>
+                <li><a href="jsVariables.html"> > Variables</a></li>
+                <li><a href="jsCondicionales.html"> > Condicionales</a></li>
+                <li><a href="jsBucles.html"> > Bucles</a></li>
+            </ul>
+        </div>
+
         <section id="contenido">
 
-            <div id="menuLateral">
-                <ul>
-                    <li>HTML</li>
-                    <li><a href="htmlTexto.html">Procesamiento de texto</a></li>
-                    <li><a href="htmlEnlaces.html">Enlaces</a></li>
-                    <li><a href="htmlTablas.html">Tablas</a></li>
-                    <li><a href="paginaCss.html">CSS</a></li>
-                    <li>JavaScript</li>
-                    <li><a href="jsCondicionales.html">Condicionales</a></li>
-                    <li><a href="jsBucles.html">Bucles</a></li>
-                    <li><a href="jsVariables.html">Variables</a></li>
-                </ul>
-            </div>
-
             <h1>Enlaces</h1>
-            </section>
-        </br>
         </br>
 
+        <p>
+            Los enlaces en HTML se crean mediante la etiqueta a (su nombre viene del inglés "anchor",
+            literalmente traducido como "ancla"). El atributo más importante de la etiqueta a es href, que se utiliza
+            para indicar la URL a la que
+            apunta el enlace. Cuando el usuario pincha sobre un enlace, el navegador se dirige a la URL del
+            recurso indicado mediante href. Las URL de los enlaces pueden ser absolutas, relativas, internas
+            y externas.
+        </p>
 
-            <p>
-                Los enlaces en HTML se crean mediante la etiqueta a (su nombre viene del inglés "anchor",
-                    literalmente traducido como "ancla"). El atributo más importante de la etiqueta a es href, que se utiliza para indicar la URL a la que
-                        apunta el enlace. Cuando el usuario pincha sobre un enlace, el navegador se dirige a la URL del
-                        recurso indicado mediante href. Las URL de los enlaces pueden ser absolutas, relativas, internas
-                        y externas.
-            </p>
-        </br>
-        </br>
- 
-            <div class="gridEjemplos">   
-                <div class="ejemploCodigo">
-                    <code>&lt;a href=https://www.google.com&gt;</code> Enlace a la página principal de google, pincha aquí <code>&lt;/a&gt;</code>
-                </div>
-
-                <div class="demostracionEjemplo">
-                    <a href="https://www.google.com">Enlace a la página principal de google, pincha aquí</a>
-                </div>
+        <div class="gridEjemplos">
+            <div class="ejemploCodigo">
+                <code>&lt;a href=https://www.google.com&gt;</code> Enlace a la página principal de google, pincha aquí
+                <code>&lt;/a&gt;</code>
             </div>
+
+            <div class="demostracionEjemplo">
+                <a href="https://www.google.com">Enlace a la página principal de google, pincha aquí</a>
+            </div>
+        </div>
         </br>
-        </br>
+        
         <p>De la misma forma, los enlaces pueden apuntar directamente a documentos PDF, Word, etc.</p>
-    </br>
-    </br>
 
-    <div class="gridEjemplos">   
-        <div class="ejemploCodigo">
-            <code>&lt;a href=https://www.congreso.es/docu/co
-                nstituciones/1978/1978_cd.pdf&gt;</code> Enlace a la Constitución Española en PDF <code>&lt;/a&gt;</code>
+        <div class="gridEjemplos">
+            <div class="ejemploCodigo">
+                <code>&lt;a href=https://www.congreso.es/docu/co
+                nstituciones/1978/1978_cd.pdf&gt;</code> Enlace a la Constitución Española en PDF
+                <code>&lt;/a&gt;</code>
+            </div>
+
+            <div class="demostracionEjemplo">
+                <a href="https://www.congreso.es/docu/constituciones/1978/1978_cd.pdf"> Enlace a la Constitución
+                    Española en PDF</a>
+            </div>
         </div>
 
-        <div class="demostracionEjemplo">
-            <a href="https://www.congreso.es/docu/constituciones/1978/1978_cd.pdf"> Enlace a la Constitución Española en PDF</a>
+        </br>
+        <p>El otro atributo básico de la etiqueta a es name, que permite definir enlaces dentro de una
+            misma página web. Si una página es muy larga, puede ser útil mostrar enlaces de tipo "Saltar
+            hasta la segunda sección", "Volver al principio de la página", etc.
+            Este tipo de enlaces son especiales, ya que la URL de la página siempre es la misma para todas
+            las secciones y por tanto, debe añadirse otra parte a las URL para identificar cada sección.
+        </p>
+        </br>
+        <p>El atributo name permite crear "enlaces vacíos" que hacen referencia a secciones dentro de una
+            misma página. Una vez definidos los "enlaces vacíos", es posible crear un enlace que apunte
+            directamente a una sección concreta de una página. La sintaxis que se utiliza con estos enlaces es
+            la misma que con los enlaces normales, salvo que
+            se añade el símbolo # seguido del nombre de la sección a la que se apunta. Cuando el usuario
+            pincha sobre uno de estos enlaces, el navegador accede a la página apuntada por la URL y baja
+            directamente a la sección cuyo nombre se indica después del símbolo #.</p>
+        </br>
+        <div class="gridEjemplos">
+            <div class="ejemploCodigo">
+                <code>&lt;a name="inicio"&gt;</code> <code>&lt;/a&gt;</code>
+            </div>
+
+            <div class="demostracionEjemplo">
+                <p>En el cuadro de la derecha vemos un ejemplo de enlace vacío</p>
+            </div>
         </div>
-    </div>
+        </br>
+        <div class="gridEjemplos">
+            <div class="ejemploCodigo">
+                <code>&lt;a href="#inicio"&gt;</code>Haga clik aquí para volver al inicio de la página
+                <code>&lt;/a&gt;</code>
+            </div>
 
-   </br>
-   </br>
-   <p>El otro atributo básico de la etiqueta a es name, que permite definir enlaces dentro de una
-    misma página web. Si una página es muy larga, puede ser útil mostrar enlaces de tipo "Saltar
-    hasta la segunda sección", "Volver al principio de la página", etc.
-    Este tipo de enlaces son especiales, ya que la URL de la página siempre es la misma para todas
-    las secciones y por tanto, debe añadirse otra parte a las URL para identificar cada sección.
-    </p>
-</br>
-</br>
-<p>El atributo name permite crear "enlaces vacíos" que hacen referencia a secciones dentro de una
-    misma página. Una vez definidos los "enlaces vacíos", es posible crear un enlace que apunte
-    directamente a una sección concreta de una página. La sintaxis que se utiliza con estos enlaces es 
-    la misma que con los enlaces normales, salvo que
-    se añade el símbolo # seguido del nombre de la sección a la que se apunta. Cuando el usuario
-    pincha sobre uno de estos enlaces, el navegador accede a la página apuntada por la URL y baja
-    directamente a la sección cuyo nombre se indica después del símbolo #.</p>
-</br>
-</br>
-<div class="gridEjemplos">   
-    <div class="ejemploCodigo">
-        <code>&lt;a name="inicio"&gt;</code>  <code>&lt;/a&gt;</code>
-    </div>
-
-    <div class="demostracionEjemplo">
-        <p>En el cuadro de la derecha vemos un ejemplo de enlace vacío</p>
-    </div>
-</div>
-</br>
-</br>
-<div class="gridEjemplos">   
-    <div class="ejemploCodigo">
-        <code>&lt;a href="#inicio"&gt;</code>Haga clik aquí para volver al inicio de la página  <code>&lt;/a&gt;</code>
-    </div>
-
-    <div class="demostracionEjemplo">
-        <a href="#inicio">Haga clik aquí para volver al inicio de la página</a>
-    </div>
-</div>
-
-            
-
-            
-            
-
+            <div class="demostracionEjemplo">
+                <a href="#inicio">Haga clik aquí para volver al inicio de la página</a>
+            </div>
+        </div>
         </section>
 
     </article>
 
 </body>
 <footer>
-         </br></br>
+    <p> Copyright © 2023</p>
+    <p>Web realizada por Javier Sánchez y Alejandro Morcilo</p>
+    </br>
+    <h6>Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido,
+        fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de
+        Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos
+        que han autorizado debidamente su inclusión.
 
-<p align="right"> Copyright © 2023</p><p align="right">Web realizada por Javier Sánchez y Alejandro Morcilo</p>
-</br>
-<h6 align="right">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos que han autorizado debidamente su inclusión.
+        En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o
+        parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación,
+        reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de
+        Androidphoria o de los titulares correspondientes.
 
-    En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación, reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de Androidphoria o de los titulares correspondientes.
-    
-    El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor, será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción, edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
-    
-    </footer>
+        El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor,
+        será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción,
+        edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
+</footer>
 
 </html>
