@@ -20,6 +20,7 @@
     </nav>
 
     <center><img src="./imagenes/Recurso 2.png" class="imgEncabezado"></center>
+    <a name="inicio"></a>
 
     <article>
         <section id="contenido">
@@ -39,37 +40,90 @@
             </div>
 
             <h2>Enlaces</h2>
+            </section>
+        </br>
+        </br>
+
 
             <p>
-                En este apartado se muestra cómo funcionan los enlace en HTML y qué tipo de etiquetas están asociadas
-                a ellos. 
+                Los enlaces en HTML se crean mediante la etiqueta a (su nombre viene del inglés "anchor",
+                    literalmente traducido como "ancla"). El atributo más importante de la etiqueta a es href, que se utiliza para indicar la URL a la que
+                        apunta el enlace. Cuando el usuario pincha sobre un enlace, el navegador se dirige a la URL del
+                        recurso indicado mediante href. Las URL de los enlaces pueden ser absolutas, relativas, internas
+                        y externas.
             </p>
- <!--
+        </br>
+        </br>
+ 
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    <code>&lt;a href=https://www.google.com&gt;</code> Enlace a la página principal de google, pincha aquí <code>&lt;/a&gt;</code>
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <a href="https://www.google.com">Enlace a la página principal de google, pincha aquí</a>
                 </div>
             </div>
+        </br>
+        </br>
+        <p>De la misma forma, los enlaces pueden apuntar directamente a documentos PDF, Word, etc.</p>
+    </br>
+    </br>
 
-            <p>
-                Texto entre los ejemplos
-            </p>
+    <div class="gridEjemplos">   
+        <div class="ejemploCodigo">
+            <code>&lt;a href=https://www.congreso.es/docu/consti
+                tuciones/1978/1978_cd.pdf&gt;</code> Enlace a la Constitución Española en PDF <code>&lt;/a&gt;</code>
+        </div>
 
-            <div class="gridEjemplos">
-                <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
-                </div>
+        <div class="demostracionEjemplo">
+            <a href="https://www.congreso.es/docu/constituciones/1978/1978_cd.pdf"> Enlace a la Constitución Española en PDF</a>
+        </div>
+    </div>
 
-                <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
-                </div>
-            </div>
+   </br>
+   </br>
+   <p>El otro atributo básico de la etiqueta a es name, que permite definir enlaces dentro de una
+    misma página web. Si una página es muy larga, puede ser útil mostrar enlaces de tipo "Saltar
+    hasta la segunda sección", "Volver al principio de la página", etc.
+    Este tipo de enlaces son especiales, ya que la URL de la página siempre es la misma para todas
+    las secciones y por tanto, debe añadirse otra parte a las URL para identificar cada sección.
+    </p>
+</br>
+</br>
+<p>El atributo name permite crear "enlaces vacíos" que hacen referencia a secciones dentro de una
+    misma página. Una vez definidos los "enlaces vacíos", es posible crear un enlace que apunte
+    directamente a una sección concreta de una página. La sintaxis que se utiliza con estos enlaces es 
+    la misma que con los enlaces normales, salvo que
+    se añade el símbolo # seguido del nombre de la sección a la que se apunta. Cuando el usuario
+    pincha sobre uno de estos enlaces, el navegador accede a la página apuntada por la URL y baja
+    directamente a la sección cuyo nombre se indica después del símbolo #.</p>
+</br>
+</br>
+<div class="gridEjemplos">   
+    <div class="ejemploCodigo">
+        <code>&lt;a name="inicio"&gt;</code>  <code>&lt;/a&gt;</code>
+    </div>
 
-            -->
+    <div class="demostracionEjemplo">
+        <p>En el cuadro, de la derecha, vemos un ejemplo de enlace vacío</p>
+    </div>
+</div>
+</br>
+</br>
+<div class="gridEjemplos">   
+    <div class="ejemploCodigo">
+        <code>&lt;a href="#inicio"&gt;</code>Haga clik aquí para volver al inicio de la página  <code>&lt;/a&gt;</code>
+    </div>
+
+    <div class="demostracionEjemplo">
+        <a href="#inicio">Haga clik aquí para volver al inicio de la página</a>
+    </div>
+</div>
+
+            
+
+            
             
 
         </section>
