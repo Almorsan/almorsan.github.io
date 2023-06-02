@@ -19,7 +19,7 @@
         </ul>
     </nav>
 
-         <center><img src="./imagenes/Recurso 10.png" class="imgEncabezado"></center>
+        <center><img src="./imagenes/Recurso 10.png" class="imgEncabezado""></center>
 
     <article>
         <section id="contenido">
@@ -41,34 +41,69 @@
             <h2>Condicionales</h2>
 
             <p>
-                En este apartado se explicará qué es una condicional en el contexto de la programación 
-                y qué tipos de condicionales existen en Javascript. 
+                Los condicionales en JavaScript te permiten tomar decisiones en función de una condición.
+                puedes elegir ejecutar una u otra función o conjunto de código. Esto lo vas a ver mucho mejor con un ejemplo:
             </p>
-<!--
+
+            <br>
+
+            <p>
+                El siguiente ejemplo muestra como hacer una sentencia IF que consiste en evaluar una condición, si esa
+                condición se cumple, ejecutará un código, si no, ejecutará otro código distinto
+            </p>
+
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    <code>let edad</code> = 18;<br>
+                    <code>if </code> (edad > 17) <code>{</code><br>
+                        <code>console.log</code>("Eres mayor de edad");<br>
+                    <code>} else {</code><br>
+                        <code>console.log</code>("Eres menor de edad");
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <p>Eres mayor de edad</p>
                 </div>
             </div>
 
             <p>
-                Texto entre los ejemplos
+                Si ejecutamos este ejemplo veremos que nos muestra el texto 'Eres mayor de edad' porque ha evaluado
+                la condición que es lo que esta dentro de los paréntesis que dice si edad es mayor que 17, si al
+                comprobarlo resulta que es verdad ejecutará el primer bloque de código, si no, ejecutará el segundo
+                bloque de código que viene justo despues del <span>else</span>, el else indica lo que ocurre cuando
+                no se cumple la condición.
+            </p>
+
+            <br>
+
+            <p>
+                Dentro de los condicionales tenenemos también otra palabra clave que es <span>else if</span>, esta
+                palabra clave lo que nos permite es evular varias condiciones seguidas y que cuando una de ellas se
+                ejecute el resto ya no las ejecuta y de esta forma solo tenemos un <span>else</span> para todas las
+                condiciones que encadenemos.
             </p>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    <code>let edad</code> = 64;<br>
+                    <code>if </code> (edad > 17) <code>{</code><br>
+                        <code>console.log</code>("Eres mayor de edad");<br>
+                    <code>} else if (edad > 64){</code><br>
+                        <code>console.log</code>("Perteneces a la tercera edad") <br>
+                    <code>} else {</code><br>
+                        <code>console.log</code>("Eres menor de edad")
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <p>Perteneces a la tercera edad</p>
                 </div>
             </div>
--->
+
+            <p>
+                Aquí vemos que estamos evaluando dos condiciones y que si ninguna de las dos es verdad, ejecuta
+                el bloque de código que viene en el else.
+            </p>
+
         </section>
 
     </article>
