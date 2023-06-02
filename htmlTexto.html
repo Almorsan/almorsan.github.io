@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - texto</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
-    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
+
     <style>
         h1 {
             font-size: 32px;
-            
         }
-</style>
+    </style>
 </head>
 
 <body>
-    
+
     <nav>
         <ul>
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="htmlTexto.html">HTML</a></li> <!--Por defecto, se abre la página de variables-->
+            <li><a href="htmlTexto.html">HTML</a></li> 
             <li><a href="paginaCss.html">CSS</a></li>
-            <li><a href="jsVariables.html">JAVASCRIPT</a></li> <!--Por defecto, se abre la página de variables-->
+            <li><a href="jsVariables.html">JAVASCRIPT</a></li> 
             <li><a href="notaMedia.html">CALCULA TU NOTA</a></li>
             <li><a href="conocenos.html">CONÓCENOS</a></li>
         </ul>
     </nav>
 
     <center><img src="./imagenes/Recurso 2.png" class="imgEncabezado"></center>
-    
+
     <article>
-        
+
+        <div id="menuLateral">
+            <ul>
+                <li>HTML</li>
+                <li><a href="htmlTexto.html"> > Procesamiento de texto</a></li>
+                <li><a href="htmlEnlaces.html"> > Enlaces</a></li>
+                <li><a href="htmlTablas.html"> > Tablas</a></li>
+                <li>CSS</li>
+                <li><a href="paginaCss.html"> > Tipos de Identificadores</a></li>
+                <li>JAVASCRIPT</li>
+                <li><a href="jsVariables.html"> > Variables</a></li>
+                <li><a href="jsCondicionales.html"> > Condicionales</a></li>
+                <li><a href="jsBucles.html"> > Bucles</a></li>
+            </ul>
+        </div>
+
         <section id="contenido">
 
-            <div id="menuLateral">
-                <ul>
-                    <li>HTML</li>
-                    <li><a href="htmlTexto.html">Procesamiento de texto</a></li>
-                    <li><a href="htmlEnlaces.html">Enlaces</a></li>
-                    <li><a href="htmlTablas.html">Tablas</a></li>
-                    <li><a href="paginaCss.html">CSS</a></li>
-                    <li>JavaScript</li>
-                    <li><a href="jsCondicionales.html">Condicionales</a></li>
-                    <li><a href="jsBucles.html">Bucles</a></li>
-                    <li><a href="jsVariables.html">Variables</a></li>
-                </ul>
-            </div>
-
             <h1>Procesamiento de texto</h1>
-        </br>
-        </br>
             <p>
-                La mayor parte del contenido de las páginas HTML habituales está formado por texto, llegando a
-               ser más del 90% del código de la página. Por este motivo, es muy importante conocer los
-               elementos y etiquetas que define HTML para el manejo del texto.
-             El lenguaje HTML incorpora al tratamiento del texto muchas de las ideas y normas establecidas
-             en otros entornos de publicación de contenidos. De esta forma, HTML define etiquetas para
-            estructurar el contenido en secciones y párrafos y define otras etiquetas para marcar
-            elementos importantes dentro del texto
+                En este apartado te voy a mostrar como puedes mostrar un texto en una página web con HTML, y modificarlo
+                según el uso que le quieras dar.
             </p>
 
-            <br>
-        </br>
-        </br>
+            </br>
+
             <p>
                 La siguiente etiqueta es la más simple para mostrar texto dentro de una página web, es recomendable
                 usar siempre al menos una etiqueta para mostrar un texto, dado que luego podremos hacer modificaciones
                 sobre todos los textos que tengan esta misma etiqueta, como cambiar el color, tamaño, fuente, etc.
             </p>
-        </br>
-        </br>
-
-            <div class="gridEjemplos">   
+            
+            <div class="gridEjemplos">
                 <div class="ejemploCodigo">
                     <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
                 </div>
@@ -82,19 +73,15 @@
                     <p>El contenido de la etiqueta &lt;p&gt; se muestra exactamente igual que la escribes</p>
                 </div>
             </div>
-        </br>
-        </br>
+            </br>
 
             <p>
-                Los elementos de encabezado implementan seis niveles de encabezado del documento, 
+                Los elementos de encabezado implementan seis niveles de encabezado del documento,
                 h1 es el más importante, y h6, el menos importante. Un elemento de encabezado describe
-                     brevemente el tema de la sección que presenta. La información de encabezado puede ser usada por
-                      los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento automáticamente.
+                brevemente el tema de la sección que presenta. La información de encabezado puede ser usada por
+                los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento
+                automáticamente.
             </p>
-        </br>
-       </br>
-
-
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -105,18 +92,12 @@
                     <h1>El texto dentro de esta etiqueta será considerado como un titulo</h1>
                 </div>
             </div>
-        </br>
-       </br>
+            </br>
 
             <p>
-                Tenemos varios tipos de titulos desde Título 1 que sería el más grande hasta Título 6 que sería el 
+                Tenemos varios tipos de titulos desde Título 1 que sería el más grande hasta Título 6 que sería el
                 titulo más pequeño
             </p>
-
-        </br>
-    </br>
-
-           
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -127,8 +108,6 @@
                     <h1>Título 1</h1>
                 </div>
             </div>
-        </br>
-        </br>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -139,8 +118,6 @@
                     <h2>Título 2</h2>
                 </div>
             </div>
-        </br>
-        </br>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -151,8 +128,6 @@
                     <h3>Título 3</h3>
                 </div>
             </div>
-        </br>
-        </br>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -163,8 +138,6 @@
                     <h4>Título 4</h4>
                 </div>
             </div>
-        </br>
-        </br>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -175,8 +148,6 @@
                     <h5>Título 5</h5>
                 </div>
             </div>
-        </br>
-        </br>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
@@ -187,97 +158,88 @@
                     <h6>Título 6</h6>
                 </div>
             </div>
-        </br>
-        </br>
-        <p>Para poder resaltar un texto mediante el uso de negrita (bold), utilizaremos la etiqueta strong. Para el 
-            uso de cursiva(italic), por su parte, utilizaremos la etiqueta em.
-        </p>
-      </br>
-      </br>
-      <div class="gridEjemplos">
-        <div class="ejemploCodigo">
-            <code>&lt;strong&gt;</code> Ejemplo de uso de la etiqueta strong para negrita (bold) <code>&lt;/strong&gt;</code>
-        </div>
+            <br>
 
-        <div class="demostracionEjemplo">
-            <strong>Ejemplo de uso de la etiqueta strong para negrita (bold)</strong>
-        </div>
-    </div>
-    </br>
-    </br>
-    <div class="gridEjemplos">
-        <div class="ejemploCodigo">
-            <code>&lt;em&gt;</code> Ejemplo de uso de la etiqueta em para cursiva (italic) <code>&lt;/em&gt;</code>
-        </div>
+            <p>Para poder resaltar un texto mediante el uso de negrita (bold), utilizaremos la etiqueta strong. Para el
+                uso de cursiva(italic), por su parte, utilizaremos la etiqueta em.
+            </p>
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;strong&gt;</code> Ejemplo de uso de la etiqueta strong para negrita (bold)
+                    <code>&lt;/strong&gt;</code>
+                </div>
 
-        <div class="demostracionEjemplo">
-            <em>Ejemplo de uso de la etiqueta em para cursiva (italic)</em>
-        </div>
-    </div>
-</br>
-</br>
-<p>Para el uso de notaciones matemáticas, por otra parte, utilizaremos la etiqueta sup (en el caso de que 
-    queramos expresar potencias matemáticas) y la etiqueta sub (para el caso de notaciones propias de elementos químicos)
-</p>
-</br>
-</br>
-<div class="gridEjemplos">   
-    <div class="ejemploCodigo">
-        4<code>&lt;sup&gt;</code> 
+                <div class="demostracionEjemplo">
+                    <strong>Ejemplo de uso de la etiqueta strong para negrita (bold)</strong>
+                </div>
+            </div>
 
-        2
-        
-        <code>&lt;/sup&gt;</code>=16
-    </div>
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <code>&lt;em&gt;</code> Ejemplo de uso de la etiqueta em para cursiva (italic)
+                    <code>&lt;/em&gt;</code>
+                </div>
 
-    <div class="demostracionEjemplo">
-        <p>
-        
-        4<sup>2</sup>=16
+                <div class="demostracionEjemplo">
+                    <em>Ejemplo de uso de la etiqueta em para cursiva (italic)</em>
+                </div>
+            </div>
+            <p>Para el uso de notaciones matemáticas, por otra parte, utilizaremos la etiqueta sup (en el caso de que
+                queramos expresar potencias matemáticas) y la etiqueta sub (para el caso de notaciones propias de
+                elementos químicos)
+            </p>
 
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    4<code>&lt;sup&gt;</code>
 
+                    2
 
-        </p>
-    </div>
-</div>
-</br>
-</br>
-<div class="gridEjemplos">   
-    <div class="ejemploCodigo">
-        H<code>&lt;sub&gt;</code> 
+                    <code>&lt;/sup&gt;</code>=16
+                </div>
 
-        2
-        
-        <code>&lt;/sub&gt;</code>O
-    </div>
+                <div class="demostracionEjemplo">
+                    <p>
+                        4<sup>2</sup>=16
+                    </p>
+                </div>
+            </div>
 
-    <div class="demostracionEjemplo">
-        <p>
-        
-            H<sub>2</sub>O
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    H<code>&lt;sub&gt;</code>
 
+                    2
 
+                    <code>&lt;/sub&gt;</code>O
+                </div>
 
-        </p>
-    </div>
-</div>
-            
-
+                <div class="demostracionEjemplo">
+                    <p>
+                        H<sub>2</sub>O
+                    </p>
+                </div>
+            </div>
         </section>
 
     </article>
-
 </body>
 <footer>
-         </br></br>
+    <p> Copyright © 2023</p>
+    <p>Web realizada por Javier Sánchez y Alejandro Morcilo</p>
+    </br>
+    <h6>Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido,
+        fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de
+        Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos
+        que han autorizado debidamente su inclusión.
 
-<p align="right"> Copyright © 2023</p><p align="right">Web realizada por Javier Sánchez y Alejandro Morcilo</p>
-</br>
-<h6 align="right">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos que han autorizado debidamente su inclusión.
+        En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o
+        parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación,
+        reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de
+        Androidphoria o de los titulares correspondientes.
 
-    En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación, reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de Androidphoria o de los titulares correspondientes.
-    
-    El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor, será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción, edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
-    
-    </footer>
+        El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor,
+        será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción,
+        edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
+</footer>
 </html>
