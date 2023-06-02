@@ -42,36 +42,102 @@
             <h2>Bucles</h2>
 
             <p>
-                En este apartado se explicará el funcionamiento de un bucle y los distintos tipos
-                existentes para Javascript. 
+                Los bucles son una estructura fundamental en cualquier lenguaje de programación, estos te permite
+                ejecutar un código repetidas veces mientras se cumpla una condición especiífica lo que nos permite
+                automatizar tareas repetitivas. Dentro de los bucles vamos a hablar de 3:
             </p>
 
-            <!--
+            <ul>
+                <h1><li>1. BUCLE FOR</li></h1> <br> <br>
+            </ul>
+
+            <p>
+                El bucle FOR es una estructura que tiene una variable contador, esta variable contador simplemenete
+                se encarga de contar las vueltas que damos en el bucle, y cuando llega a la cantidad de vueltas que
+                le hemos indicado como límite este finaliza
+            </p>
+
+            
 
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    <code>for (let i = 0; i < 5; i++) {</code><br>
+                        console.log(<code>i</code>); <br>
+                    }
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
                 </div>
             </div>
 
             <p>
-                Texto entre los ejemplos
+                Como podemos apreciar el resultado de este bucle es que está imprimiendo los números desde el 0 hasta
+                el 4 porque nuestra condición es que mientras <code>i</code> sea menor que 5 ejecuta el siguiente 
+                código y en cada vuelta del bucle vas a sumar 1 a 'i' que esto se lo indicamos con <code>i++</code>
+            </p>
+
+            <ul>
+                <h1><li>2. BUCLE WHILE</li></h1> <br> <br>
+            </ul>
+
+            <p>
+                El bucle WHILE hace lo mismo que el bucle FOR ejecutar el código repetidas veces, mientras se cumpla
+                una condición, la principal diferencia con el FOR es que la condición no tiene por que ser numérica
+                y la debemos indicar nosotros, puede ser si un texto está vacío, si una variable booleana es true o 
+                false, lo que nosotros queramos y <code> mientras se cumpla la condición el bucle continua.</code>
             </p>
 
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    let i = 0;<br>
+                    <code>while (i < 5) {</code> <br>
+                        console.log(i); <br>
+                        i++; <br>
+                    <code>}</code>
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
                 </div>
             </div>
-            -->
+            
+            <ul>
+                <h1><li>3. BUCLE DO WHILE</li></h1> <br> <br>
+            </ul>
+
+            <p>
+                El bucle DO WHILE es igual que el WHILE pero en el bucle WHILE existe la posibilidad de que el bucle
+                no de ni una sola vuelta, dado que hay una condición que si no se cumple, este nunca se ejecuta,
+                esto con el bucle DO WHILe no pasa, tenemos la garantía de que se ejecuta al menos una vez porque la
+                condición que decide si seguimos en el bucle evalua al final del mismo, con lo que el código se ejecuta
+                al menos una vez.
+            </p>
+
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    let i = 10;<br>
+                    <code>do {</code> <br>
+                        console.log(i); <br>
+                    <code>} while (i < 5);</code>
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <p>10</p>
+                </div>
+            </div>
+
+            <p>Solo se muestra el 10, porque como no se cumple la condición ejecuta 1 vez el código dentro del
+                do while y se sale.
+            </p>
 
         </section>
 
