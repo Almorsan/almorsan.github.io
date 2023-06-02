@@ -15,7 +15,7 @@
             <li><a href="paginaCss.html">CSS</a></li>
             <li><a href="jsVariables.html">JAVASCRIPT</a></li> <!--Por defecto, se abre la página de variables-->
             <li><a href="notaMedia.html">CALCULA TU NOTA</a></li>
-            <li><a href="conocenos.html">CONÓCENOS</a></li>
+            <li><a href="conocenos.html">CONÓCENOS</li>
         </ul>
     </nav>
 
@@ -38,40 +38,109 @@
                 </ul>
             </div>
 
-            <h2>CSS</h2>
+            
 
             <p>
-                En este apartado se muestra el funcionamiento de CSS, así como su correcta combinación con HTML.
-                
+                Las Hojas de estilo en cascada (del ingles Cascading Stylesheets CSS) es la siguiente tecnología
+                que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura
+                y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente. 
+                CSS se puede usar, por ejemplo, para cambiar la fuente, el color, el tamaño y el espaciado 
+                del contenido, para formar multiples columnas, añadir animaciones y otros elementos decorativos.
             </p>
-<!--
+
+            <br>
+
+            <p>
+                Lo primero que debemos aprender para poder usar las hojas de estilo es a como referirnos a un 
+                determinado elemento de nuestro HTML, para ello tenemos formas:
+            </p>
+
+            <h2>Referencia por etiqueta:</h2>
+            <p>
+                Esto es modificar los valores que utiliza por defecto, por ejemplo, si la etiqueta h1 tiene un tamaño
+                de 20px de fuente, podemos indicarle que sea 25px y de color azul celeste y siempre que escribamos 
+                una etiqueta h1 tendrá este formato en el HTML que utilice esa hoja de estilo.
+            </p>
+
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    h1 { <br>
+                        font-size: 25px;<br>
+                        color: red; <br>
+                    }
                 </div>
 
+                <style>
+                    h1 {
+                        font-size: 17px;
+                        color: lightblue;
+                    }
+                </style>
+
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <h1>Esto es un ejemplo de un texto con la etiqueta h1 modificada.</h1>
                 </div>
             </div>
 
+            <h2>Referencia por clase</h2>
             <p>
-                Texto entre los ejemplos
+                Si queremos referirnos un conjunto de etiquetas o a una etiqueta en concreto que se repite más veces
+                pero solo queremos modificar esa etiqueta en concreto, podemos asignarle una clase y referirnos a esa
+                clase exclusivamente a la hora de aplicar modificaciones, las clases tambien son útiles cuando tienes
+                varios bloques de etiquetas y queremos aplicarles a todo el mismo diseño, podemos ponerles a todos la 
+                etiqueta class y el diseño se aplicará a todos ellos.
             </p>
 
-            <div class="gridEjemplos">
+            <p>Para referirnos a una clase ponemos un punto delante del nombre de la clase</p>
+
+            <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    .nombreClase { <br>
+                        font-size: 25px;<br>
+                        color: red; <br>
+                    }
                 </div>
+
+                <style>
+                    h1 {
+                        font-size: 17px;
+                        color: lightblue;
+                    }
+                </style>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <h1>Texto modificado desde un identificador de clase</h1>
                 </div>
             </div>
-            -->
+
+            <h2>Referencia por ID</h2>
+            <p>
+                Por último podemos referirnos a las etiquetas mediantes su ID, la direferencia con la clase es que
+                el valor del ID es único solo podemos poner un mismo ID dentro del HTML, no lo podemos repetir.
+                Para referirnos a un ID dentro del CSS en vez de un punto como en la clase pondremos una almohadilla.
+            </p>
+
+            <div class="gridEjemplos">   
+                <div class="ejemploCodigo">
+                    #nombreId { <br>
+                        font-size: 25px;<br>
+                        color: red; <br>
+                    }
+                </div>
+
+                <style>
+                    h1 {
+                        font-size: 17px;
+                        color: lightblue;
+                    }
+                </style>
+
+                <div class="demostracionEjemplo">
+                    <h1>Texto modificado desde un identificador ID</h1>
+                </div>
+            </div>
 
         </section>
-
     </article>
 </body>
 </html>
