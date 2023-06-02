@@ -41,9 +41,175 @@
             <h2>Tablas</h2>
 
             <p>
-                En este apartado se muestra cómo funcionan las tablas en html y qué tipos de etiquetas están asociadas
-                a ellas. 
+                Desde sus primeras versiones, HTML incluyó el soporte para crear tablas de datos en las páginas
+                 web. Además de ser sencillo, el modelo definido por HTML es muy flexible y bastante completo.
+                 Las tablas en HTML utilizan los mismos conceptos de filas, columnas, cabeceras y títulos que los
+                 que se utilizan en cualquier otro entorno de publicación de documentos. 
             </p>
+        </br>
+        </br>
+            <p>
+                A pesar de que las tablas HTML son fáciles de comprender y utilizar, son uno de los elementos
+               más polémicos de HTML. El problema de las tablas es que no siempre se utilizan
+               adecuadamente. Aunque parezca obvio, las tablas se deben utilizar para mostrar información
+               tabular.
+               Hasta hace unos años, las tablas también se utilizaban para definir la estructura de las páginas
+               web. La cabecera de la página era una fila de una gran tabla, el pie de página era otra fila de esta
+               tabla y la zona de contenidos estaba formada por varias columnas dentro de esa gran tabla.
+
+            </p>
+        </br>
+        </br>
+        <p>
+            Las tablas más sencillas de HTML se definen con tres etiquetas: table para crear la tabla, tr
+                para crear cada fila y td para crear cada columna.
+                
+        </p>
+    </br>
+    </br>
+    <div class="gridEjemplos">   
+        <div class="ejemploCodigo">
+             <code>&lt;table&gt;</code>
+        </br>
+                <code>&lt;tr&gt;</code>
+            </br>
+                <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Curso<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+            </br>
+               <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horas<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horario<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+            </br>
+                <code>&lt;/tr&gt;</code>
+            </br>
+                <code>&lt;tr&gt;</code>
+            </br>
+                <code>&lt;td&gt;</code>CSS<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+            </br>
+                <code>&lt;/tr&gt;</code>
+            </br>
+                <code>&lt;tr&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>HTML<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+            </br>
+                <code>&lt;/tr&gt;</code>
+            </br>
+                <code>&lt;tr&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>Dreamweaver<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>60<code>&lt;/td&gt;</code>
+            </br>
+            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+            </br>
+                <code>&lt;/tr&gt;</code>
+            </br>
+                <code>&lt;/table&gt;</code>
+                 
+        </div>
+
+        <div class="demostracionEjemplo">
+            <table>
+                <tr>
+                <td><strong>Curso</strong></td>
+                <td><strong>Horas</strong></td>
+                <td><strong>Horario</strong></td>
+                </tr>
+                <tr>
+                <td>CSS</td>
+                <td>20</td>
+                <td>16:00 - 20:00</td>
+                </tr>
+                <tr>
+                <td>HTML</td>
+                <td>20</td>
+                <td>16:00 - 20:00</td>
+                </tr>
+                <tr>
+                <td>Dreamweaver</td>
+                <td>60</td>
+                <td>16:00 - 20:00</td>
+                </tr>
+                </table>
+        </div>
+    </div>
+</br>
+</br>
+<p>
+    La etiqueta table encierra todas las filas y columnas de la tabla. Las etiquetas tr (del inglés
+        "table row") definen cada fila de la tabla y encierran todas las columnas. Por último, la etiqueta
+        td (del inglés "table data cell") define cada una de las columnas de las filas, aunque realmente
+        HTML no define columnas sino celdas de datos.
+        Al definir una tabla, se debe pensar en primer lugar en las filas que la forman y a continuación en
+        las columnas. El motivo es que HTML procesa primero las filas y por eso las etiquetas tr
+        aparecen antes que las etiquetas td.
+</p>
+</br>
+</br>
+<p>
+    De todos los atributos disponibles para las celdas, los más utilizados son rowspan y colspan, que
+se emplean para construir tablas complejas como las que se ven más adelante. Entre los demás
+atributos, sólo se utiliza de forma habitual el atributo scope, sobre todo con las celdas de
+cabecera que se ven a continuación.
+Normalmente, algunas de las celdas de la tabla se utilizan como cabecera de las demás celdas de
+la fila o de la columna. En este caso, HTML define la etiqueta th (del inglés "table header cell")
+para indicar que una celda es cabecera de otras celdas.
+</p>
+</br>
+</br>
+<div class="gridEjemplos">   
+    <div class="ejemploCodigo">
+        <h2>Ejemplo de fusión de columnas</h2>
+    </br>
+    <code>&lt;center&gt;</code>
+        <code>&lt;table border="1"&gt;</code>
+    </br>
+    <code>&lt;tr&gt;</code>
+     </br>
+            
+            <code>&lt;td colspan="2"&gt;</code>A<code>&lt;/td&gt;</code>
+    </br>
+    <code>&lt;/tr&gt;</code>
+    </br>
+    <code>&lt;tr&gt;</code>
+     </br>
+            
+            <code>&lt;td&gt;</code>B<code>&lt;/td&gt;</code>
+     </br>
+     <code>&lt;td&gt;</code>C<code>&lt;/td&gt;</code>
+    </br>
+    <code>&lt;/tr&gt;</code>
+     </br>
+            <code>&lt;/table&gt;</code><code>&lt;/center&gt;</code>
+            
+    </div>
+
+    <div class="demostracionEjemplo">
+        <h2>Ejemplo de fusión de columnas<h2>
+        </br> </br>
+            <center><table border="1">
+                <tr>
+                <td colspan="2">A</td>
+                </tr>
+                <tr>
+                <td>B</td>
+                <td>C</td>
+                </tr>
+                </table></center>
+   
+        
+            
+    </div>
+</div>
+
+
   <!--
             <div class="gridEjemplos">   
                 <div class="ejemploCodigo">
@@ -74,3 +240,4 @@
     </article>
 </body>
 </html>
+            
