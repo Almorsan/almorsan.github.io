@@ -1,141 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula tu nota media</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
     <script type="text/javascript" src="media.js"></script>
-     <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="htmlTexto.html">HTML</a></li> <!--Por defecto, se abre la página de variables-->
+            <li><a href="htmlTexto.html">HTML</a></li> 
             <li><a href="paginaCss.html">CSS</a></li>
-            <li><a href="jsVariables.html">JAVASCRIPT</a></li> <!--Por defecto, se abre la página de variables-->
+            <li><a href="jsVariables.html">JAVASCRIPT</a></li> 
             <li><a href="notaMedia.html">CALCULA TU NOTA</a></li>
-            <li><a href="conocenos.html">CONÓCENOS</li>
+            <li><a href="conocenos.html">CONÓCENOS</a></li>
         </ul>
     </nav>
 
     <center><img src="./imagenes/Recurso 23.png" class="imgEncabezado"></center>
-   
+
     <article>
+
+        <div id="menuLateral">
+            <ul>
+                <li>HTML</li>
+                <li><a href="htmlTexto.html"> > Procesamiento de texto</a></li>
+                <li><a href="htmlEnlaces.html"> > Enlaces</a></li>
+                <li><a href="htmlTablas.html"> > Tablas</a></li>
+                <li>CSS</li>
+                <li><a href="paginaCss.html"> > Tipos de Identificadores</a></li>
+                <li>JAVASCRIPT</li>
+                <li><a href="jsVariables.html"> > Variables</a></li>
+                <li><a href="jsCondicionales.html"> > Condicionales</a></li>
+                <li><a href="jsBucles.html"> > Bucles</a></li>
+            </ul>
+        </div>
+
         <section id="contenido">
 
-            <div id="menuLateral">
-                <ul>
-                    <li>HTML</li>
-                    <li><a href="htmlTexto.html">Procesamiento de texto</a></li>
-                    <li><a href="htmlEnlaces.html">Enlaces</a></li>
-                    <li><a href="htmlTablas.html">Tablas</a></li>
-                    <li><a href="paginaCss.html">CSS</a></li>
-                    <li>JavaScript</li>
-                    <li><a href="jsCondicionales.html">Condicionales</a></li>
-                    <li><a href="jsBucles.html">Bucles</a></li>
-                    <li><a href="jsVariables.html">Variables</a></li>
-                </ul>
-            </div>
-                
             </div>
             <form action="Hola.php" method="GET" name="miFormulario2" id="miFormulario2">
-            </br></br>
-            <fieldset>
-                <legend align="center">**CALCULADORA DE NOTA MEDIA**</legend>
-            <label>Introduce tu nota de programación</label>
-            <input type="text" name="numero1" id="numero1" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de bases de datos</label>
-            <input type="text" name="numero2" id="numero2" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de inglés</label>
-            <input type="text" name="numero3" id="numero3" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de sistemas informáticos</label>
-            <input type="text" name="numero4" id="numero4" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de entornos de desarrollo</label>
-            <input type="text" name="numero5" id="numero5" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de lenguaje de marcas</label>
-            <input type="text" name="numero6" id="numero6" size="15" maxlength="100">
-            </br></br>
-            <label>Introduce tu nota de formación  y orientación laboral</label>
-            <input type="text" name="numero7" id="numero7" size="15" maxlength="100">
-            </br></br>
-            </br></br>
-            <hr>
-            <label>Resultado</label>
-            <input type="text" name="resultado" id="resultado" size="15" maxlength="100">
-            </br></br>
-            
-            <input type="button" value="Calcula la media" onclick="media()">
-            
-          
-          
-    
-          </fieldset>
-          
-    
-    
-    
-    
-    
+                <fieldset>
+                    <legend align="center">**CALCULADORA DE NOTA MEDIA**</legend>
+                    <label>Introduce tu nota de programación</label>
+                    <input type="text" name="numero1" id="numero1" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de bases de datos</label>
+                    <input type="text" name="numero2" id="numero2" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de inglés</label>
+                    <input type="text" name="numero3" id="numero3" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de sistemas informáticos</label>
+                    <input type="text" name="numero4" id="numero4" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de entornos de desarrollo</label>
+                    <input type="text" name="numero5" id="numero5" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de lenguaje de marcas</label>
+                    <input type="text" name="numero6" id="numero6" size="15" maxlength="100">
+                    </br></br>
+                    <label>Introduce tu nota de formación y orientación laboral</label>
+                    <input type="text" name="numero7" id="numero7" size="15" maxlength="100">
+                    </br></br>
+                    <hr>
+                    <label>Resultado</label>
+                    <input type="text" name="resultado" id="resultado" size="15" maxlength="100">
+                    </br></br>
+
+                    <input type="button" value="Calcula la media" onclick="media()">
+
+                </fieldset>
             </form>
-               <!--
-
-              
-            <h2>Procesamiento de texto</h2>
-
-            <p>
-                En este apartado te voy a mostrar como puedes modificar el texto en html, como puede ser
-                poner la letra negrita, cursiva, distinto tamaño de encabezado con ejemplos.
-            </p>
-
-            <div class="gridEjemplos">   
-                <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
-                </div>
-
-                <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
-                </div>
-            </div>
-
-            <p>
-                Texto entre los ejemplos
-            </p>
-
-            <div class="gridEjemplos">
-                <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
-                </div>
-
-                <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
-                </div>
-            </div>
-             -->
-
-             
         </section>
 
     </article>
-
 </body>
 <footer>
-         </br></br>
+    <p> Copyright © 2023</p>
+    <p>Web realizada por Javier Sánchez y Alejandro Morcilo</p>
+    </br>
+    <h6>Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido,
+        fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de
+        Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos
+        que han autorizado debidamente su inclusión.
 
-<p align="right"> Copyright © 2023</p><p align="right">Web realizada por Javier Sánchez y Alejandro Morcilo</p>
-</br>
-<h6 align="right">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos que han autorizado debidamente su inclusión.
+        En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o
+        parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación,
+        reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de
+        Androidphoria o de los titulares correspondientes.
 
-    En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación, reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de Androidphoria o de los titulares correspondientes.
-    
-    El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor, será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción, edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
-    
-    </footer>
+        El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor,
+        será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción,
+        edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
+</footer>
+
 </html>
