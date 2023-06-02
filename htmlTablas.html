@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - tablas</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./imagenes/favicon2.png">
     <style>
         h1 {
             font-size: 32px;
         }
     </style>
-            
+
 </head>
+
 <body>
     <nav>
         <ul>
@@ -29,238 +31,211 @@
     <center><img src="./imagenes/Recurso 2.png" class="imgEncabezado"></center>
 
     <article>
+
+        <div id="menuLateral">
+            <ul>
+                <li>HTML</li>
+                <li><a href="htmlTexto.html"> > Procesamiento de texto</a></li>
+                <li><a href="htmlEnlaces.html"> > Enlaces</a></li>
+                <li><a href="htmlTablas.html"> > Tablas</a></li>
+                <li>CSS</li>
+                <li><a href="paginaCss.html"> > Tipos de Identificadores</a></li>
+                <li>JAVASCRIPT</li>
+                <li><a href="jsVariables.html"> > Variables</a></li>
+                <li><a href="jsCondicionales.html"> > Condicionales</a></li>
+                <li><a href="jsBucles.html"> > Bucles</a></li>
+            </ul>
+        </div>
+
         <section id="contenido">
 
-            <div id="menuLateral">
-                <ul>
-                    <li>HTML</li>
-                    <li><a href="htmlTexto.html">Procesamiento de texto</a></li>
-                    <li><a href="htmlEnlaces.html">Enlaces</a></li>
-                    <li><a href="htmlTablas.html">Tablas</a></li>
-                    <li><a href="paginaCss.html">CSS</a></li>
-                    <li>JavaScript</li>
-                    <li><a href="jsCondicionales.html">Condicionales</a></li>
-                    <li><a href="jsBucles.html">Bucles</a></li>
-                    <li><a href="jsVariables.html">Variables</a></li>
-                </ul>
-            </div>
-
             <h1>Tablas</h1>
-            </br>
-            </br>
 
             <p>
                 Desde sus primeras versiones, HTML incluyó el soporte para crear tablas de datos en las páginas
-                 web. Además de ser sencillo, el modelo definido por HTML es muy flexible y bastante completo.
-                 Las tablas en HTML utilizan los mismos conceptos de filas, columnas, cabeceras y títulos que los
-                 que se utilizan en cualquier otro entorno de publicación de documentos. 
+                web. Además de ser sencillo, el modelo definido por HTML es muy flexible y bastante completo.
+                Las tablas en HTML utilizan los mismos conceptos de filas, columnas, cabeceras y títulos que los
+                que se utilizan en cualquier otro entorno de publicación de documentos.
             </p>
-        </br>
-        </br>
+            </br>
             <p>
                 A pesar de que las tablas HTML son fáciles de comprender y utilizar, son uno de los elementos
-               más polémicos de HTML. El problema de las tablas es que no siempre se utilizan
-               adecuadamente. Aunque parezca obvio, las tablas se deben utilizar para mostrar información
-               tabular.
-               Hasta hace unos años, las tablas también se utilizaban para definir la estructura de las páginas
-               web. La cabecera de la página era una fila de una gran tabla, el pie de página era otra fila de esta
-               tabla y la zona de contenidos estaba formada por varias columnas dentro de esa gran tabla.
+                más polémicos de HTML. El problema de las tablas es que no siempre se utilizan
+                adecuadamente. Aunque parezca obvio, las tablas se deben utilizar para mostrar información
+                tabular.
+                Hasta hace unos años, las tablas también se utilizaban para definir la estructura de las páginas
+                web. La cabecera de la página era una fila de una gran tabla, el pie de página era otra fila de esta
+                tabla y la zona de contenidos estaba formada por varias columnas dentro de esa gran tabla.
 
             </p>
-        </br>
-        </br>
-        <p>
-            Las tablas más sencillas de HTML se definen con tres etiquetas: table para crear la tabla, tr
-                para crear cada fila y td para crear cada columna.
-                
-        </p>
-    </br>
-    </br>
-    <div class="gridEjemplos">   
-        <div class="ejemploCodigo">
-             <code>&lt;table&gt;</code>
-        </br>
-                <code>&lt;tr&gt;</code>
             </br>
-                <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Curso<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
-            </br>
-               <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horas<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horario<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
-            </br>
-                <code>&lt;/tr&gt;</code>
-            </br>
-                <code>&lt;tr&gt;</code>
-            </br>
-                <code>&lt;td&gt;</code>CSS<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
-            </br>
-                <code>&lt;/tr&gt;</code>
-            </br>
-                <code>&lt;tr&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>HTML<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
-            </br>
-                <code>&lt;/tr&gt;</code>
-            </br>
-                <code>&lt;tr&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>Dreamweaver<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>60<code>&lt;/td&gt;</code>
-            </br>
-            <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
-            </br>
-                <code>&lt;/tr&gt;</code>
-            </br>
-                <code>&lt;/table&gt;</code>
-                 
-        </div>
-
-        <div class="demostracionEjemplo">
-            <table>
-                <tr>
-                <td><strong>Curso</strong></td>
-                <td><strong>Horas</strong></td>
-                <td><strong>Horario</strong></td>
-                </tr>
-                <tr>
-                <td>CSS</td>
-                <td>20</td>
-                <td>16:00 - 20:00</td>
-                </tr>
-                <tr>
-                <td>HTML</td>
-                <td>20</td>
-                <td>16:00 - 20:00</td>
-                </tr>
-                <tr>
-                <td>Dreamweaver</td>
-                <td>60</td>
-                <td>16:00 - 20:00</td>
-                </tr>
-                </table>
-        </div>
-    </div>
-</br>
-</br>
-<p>
-    La etiqueta table encierra todas las filas y columnas de la tabla. Las etiquetas tr (del inglés
-        "table row") definen cada fila de la tabla y encierran todas las columnas. Por último, la etiqueta
-        td (del inglés "table data cell") define cada una de las columnas de las filas, aunque realmente
-        HTML no define columnas sino celdas de datos.
-        Al definir una tabla, se debe pensar en primer lugar en las filas que la forman y a continuación en
-        las columnas. El motivo es que HTML procesa primero las filas y por eso las etiquetas tr
-        aparecen antes que las etiquetas td.
-</p>
-</br>
-</br>
-<p>
-    De todos los atributos disponibles para las celdas, los más utilizados son rowspan y colspan, que
-se emplean para construir tablas complejas como las que se ven más adelante. Entre los demás
-atributos, sólo se utiliza de forma habitual el atributo scope, sobre todo con las celdas de
-cabecera que se ven a continuación.
-Normalmente, algunas de las celdas de la tabla se utilizan como cabecera de las demás celdas de
-la fila o de la columna. En este caso, HTML define la etiqueta th (del inglés "table header cell")
-para indicar que una celda es cabecera de otras celdas.
-</p>
-</br>
-</br>
-<div class="gridEjemplos">   
-    <div class="ejemploCodigo">
-        <h2>Ejemplo de fusión de columnas</h2>
-    </br>
-    <code>&lt;center&gt;</code>
-        <code>&lt;table border="1"&gt;</code>
-    </br>
-    <code>&lt;tr&gt;</code>
-     </br>
-            
-            <code>&lt;td colspan="2"&gt;</code>A<code>&lt;/td&gt;</code>
-    </br>
-    <code>&lt;/tr&gt;</code>
-    </br>
-    <code>&lt;tr&gt;</code>
-     </br>
-            
-            <code>&lt;td&gt;</code>B<code>&lt;/td&gt;</code>
-     </br>
-     <code>&lt;td&gt;</code>C<code>&lt;/td&gt;</code>
-    </br>
-    <code>&lt;/tr&gt;</code>
-     </br>
-            <code>&lt;/table&gt;</code><code>&lt;/center&gt;</code>
-            
-    </div>
-
-    <div class="demostracionEjemplo">
-        <h2>Ejemplo de fusión de columnas<h2>
-        </br> </br>
-            <center><table border="1">
-                <tr>
-                <td colspan="2">A</td>
-                </tr>
-                <tr>
-                <td>B</td>
-                <td>C</td>
-                </tr>
-                </table></center>
-   
-        
-            
-    </div>
-</div>
-
-
-  <!--
-            <div class="gridEjemplos">   
-                <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
-                </div>
-
-                <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
-                </div>
-            </div>
-
             <p>
-                Texto entre los ejemplos
-            </p>
+                Las tablas más sencillas de HTML se definen con tres etiquetas: table para crear la tabla, tr
+                para crear cada fila y td para crear cada columna.
 
+            </p>
+            </br>
             <div class="gridEjemplos">
                 <div class="ejemploCodigo">
-                    <code>&lt;p&gt;</code> Esto es un texto de prueba <code>&lt;/p&gt;</code>
+                    <code>&lt;table&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Curso<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horas<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code><code>&lt;strong&gt;</code>Horario<code>&lt;/strong&gt;</code><code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>CSS<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>HTML<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>20<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>Dreamweaver<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>60<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>16:00 - 20:00<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;/table&gt;</code>
+
                 </div>
 
                 <div class="demostracionEjemplo">
-                    <p>La etiqueta p se muestra exactamente igual que la escribes</p>
+                    <table>
+                        <tr>
+                            <td><strong>Curso</strong></td>
+                            <td><strong>Horas</strong></td>
+                            <td><strong>Horario</strong></td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>20</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dreamweaver</td>
+                            <td>60</td>
+                            <td>16:00 - 20:00</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
--->
+            <p>
+                La etiqueta table encierra todas las filas y columnas de la tabla. Las etiquetas tr (del inglés
+                "table row") definen cada fila de la tabla y encierran todas las columnas. Por último, la etiqueta
+                td (del inglés "table data cell") define cada una de las columnas de las filas, aunque realmente
+                HTML no define columnas sino celdas de datos.
+                Al definir una tabla, se debe pensar en primer lugar en las filas que la forman y a continuación en
+                las columnas. El motivo es que HTML procesa primero las filas y por eso las etiquetas tr
+                aparecen antes que las etiquetas td.
+            </p>
+            </br>
+            <p>
+                De todos los atributos disponibles para las celdas, los más utilizados son rowspan y colspan, que
+                se emplean para construir tablas complejas como las que se ven más adelante. Entre los demás
+                atributos, sólo se utiliza de forma habitual el atributo scope, sobre todo con las celdas de
+                cabecera que se ven a continuación.
+                Normalmente, algunas de las celdas de la tabla se utilizan como cabecera de las demás celdas de
+                la fila o de la columna. En este caso, HTML define la etiqueta th (del inglés "table header cell")
+                para indicar que una celda es cabecera de otras celdas.
+            </p>
+            </br>
+            <div class="gridEjemplos">
+                <div class="ejemploCodigo">
+                    <h2>Ejemplo de fusión de columnas</h2>
+                    </br>
+                    <code>&lt;center&gt;</code>
+                    <code>&lt;table border="1"&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+
+                    <code>&lt;td colspan="2"&gt;</code>A<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;tr&gt;</code>
+                    </br>
+
+                    <code>&lt;td&gt;</code>B<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;td&gt;</code>C<code>&lt;/td&gt;</code>
+                    </br>
+                    <code>&lt;/tr&gt;</code>
+                    </br>
+                    <code>&lt;/table&gt;</code><code>&lt;/center&gt;</code>
+
+                </div>
+
+                <div class="demostracionEjemplo">
+                    <h2>Ejemplo de fusión de columnas<h2>
+                            </br> </br>
+                            <center>
+                                <table border="1">
+                                    <tr>
+                                        <td colspan="2">A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>C</td>
+                                    </tr>
+                                </table>
+                            </center>
+                </div>
+            </div>
         </section>
 
     </article>
 
 </body>
 <footer>
-         </br></br>
+    </br></br>
 
-<p align="right"> Copyright © 2023</p><p align="right">Web realizada por Javier Sánchez y Alejandro Morcilo</p>
-</br>
-<h6 align="right">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos que han autorizado debidamente su inclusión.
+    <p> Copyright © 2023</p>
+    <p>Web realizada por Javier Sánchez y Alejandro Morcilo</p>
+    </br>
+    <h6>Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido,
+        fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de
+        Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos
+        que han autorizado debidamente su inclusión.
 
-    En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación, reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de Androidphoria o de los titulares correspondientes.
-    
-    El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor, será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción, edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
-    
-    </footer>
+        En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia, transmisión, cesión total o
+        parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación,
+        reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de
+        Androidphoria o de los titulares correspondientes.
+
+        El uso de imágenes, fragmentos de videos y demás material que sea objeto de protección de los derechos de autor,
+        será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción,
+        edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</h6>
+
+</footer>
 
 </html>
-            
