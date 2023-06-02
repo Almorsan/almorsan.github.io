@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
@@ -8,7 +8,7 @@
 body {
     background-color: #222;
     color: white;
-    font: 200 16px 'Poppins', sans-serif;
+    font: 200 18px 'Poppins', sans-serif;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -22,7 +22,7 @@ nav {
 }
 
 p {
-    font-size: 17px;
+    font-size: 20px;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -66,31 +66,63 @@ span {
     color: #ffc900;
 }
 
-ol {
-    margin-left: 15px;
-}
-
 i {
     font-size: 24px;
 }
 
-#menuLateral ul{
+label {
+    padding-left: 10px;
+}
+
+footer {
+    float: right;
+    margin-top: 50px;
+    text-align: right;
+}
+
+
+#menuLateral ul {
     display: grid;
 }
 
-#menuLateral li{
+#menuLateral li {
     padding-top: 10px;
     padding-left: 15px;
 }
 
 #menuLateral {
     border: 1px solid white;
+    width: 250px;
     float: left;
-    min-height: 1200px;
+    min-height: max-content;
     border-radius: 10px;
     margin-right: 15px;
     margin-top: 10px;
-    
+}
+
+#seccionImagenes {
+    display: flex;
+    width: 1000px;
+    height: 430px;
+}
+
+#seccionImagenes img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#seccionImagenes img:hover {
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#contenido {
+    margin-left: 270px;
 }
 
 a:any-link {
@@ -111,7 +143,7 @@ a:hover {
 
 .gridEjemplos {
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(2, 50%);
     grid-gap: 10px;
     justify-content: space-between;
     align-content: space-around;
